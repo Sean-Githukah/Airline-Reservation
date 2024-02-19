@@ -2,7 +2,7 @@
 DROP DATABASE IF EXISTS msafiri_airlines;
 
 -- Create our database
-CREATE DATABASE IF NOT EXISTS msafiri_airlines;
+CREATE DATABASE msafiri_airlines;
 
 -- Create the airports table now
 CREATE TABLE IF NOT EXISTS airport (
