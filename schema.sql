@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS flight (
     arrival DATE,
     available_seats INT,
     airport_code VARCHAR(5),
-    CONSTRAINT airport_id_fk FOREIGN KEY(airport_code) REFERENCES airport(airport_code)
+    CONSTRAINT airport_code_fk FOREIGN KEY(airport_code) REFERENCES airport(airport_code)
 );
 
 -- Create the passenger table. Include a foreign key as well
