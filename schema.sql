@@ -53,7 +53,7 @@ CREATE TABLE IF NOT EXISTS tickets (
     passenger_id INT,
     flight_id INT,
     seat_number INT,
-    class VARCHAR(10),
+    class VARCHAR(100),
     ticket_price DECIMAL(10, 2),
     date_issued TIMESTAMP,
     CONSTRAINT passenger_id_fk FOREIGN KEY(passenger_id) REFERENCES passenger(id),
