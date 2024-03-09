@@ -44,3 +44,32 @@ INSERT INTO reservation (passenger_id, flight_id, reservation_datetime, seats_as
 (8, 8, '2024-03-22 17:00:00', 1, false),
 (9, 9, '2024-03-23 18:00:00', 3, true),
 (10, 10, '2024-03-24 19:00:00', 1, false);
+
+-- Insert data into the tickets table
+
+INSERT INTO tickets (passenger_id, flight_id, seat_number, class, ticket_price, date_issued) VALUES
+(1, 1, 10, 'Economy', 200.00, '2024-03-15 10:15:00'),
+(2, 2, 20, 'Business', 500.00, '2024-03-16 11:15:00'),
+(3, 3, 30, 'Economy', 150.00, '2024-03-17 12:15:00'),
+(4, 4, 40, 'First Class', 800.00, '2024-03-18 13:15:00'),
+(5, 5, 50, 'Economy', 180.00, '2024-03-19 14:15:00'),
+(6, 6, 60, 'Business', 550.00, '2024-03-20 15:15:00'),
+(7, 7, 70, 'Economy', 190.00, '2024-03-21 16:15:00'),
+(8, 8, 80, 'First Class', 850.00, '2024-03-22 17:15:00'),
+(9, 9, 90, 'Economy', 160.00, '2024-03-23 18:15:00'),
+(10, 10, 100, 'Business', 600.00, '2024-03-24 19:15:00');
+
+
+-- Insert data into the Payments table
+
+INSERT INTO payment (reservation_id, amount_paid, payment_date, payment_method, transaction_status) VALUES
+(1, 200.00, '2024-03-15 10:20:00', 'Credit Card', true),
+(2, 500.00, '2024-03-16 11:20:00', 'PayPal', true),
+(3, 150.00, '2024-03-17 12:20:00', 'Cash', true),
+(4, 800.00, '2024-03-18 13:20:00', 'Debit Card', true),
+(5, 180.00, '2024-03-19 14:20:00', 'Credit Card', false),
+(6, 550.00, '2024-03-20 15:20:00', 'PayPal', false),
+(7, 190.00, '2024-03-21 16:20:00', 'Cash', true),
+(8, 850.00, '2024-03-22 17:20:00', 'Credit Card', false),
+(9, 160.00, '2024-03-23 18:20:00', 'Debit Card', true),
+(10, 600.00, '2024-03-24 19:20:00', 'PayPal', false);
