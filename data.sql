@@ -35,16 +35,16 @@ INSERT INTO passenger (first_name, last_name, date_of_birth, gender, phone_numbe
 
 INSERT INTO reservation (passenger_id, flight_id, reservation_datetime, seats_assigned, booking_status) 
 VALUES
-    (11, 1, '2024-03-15 10:00:00', 1, true),
-    (12, 2, '2024-03-16 11:00:00', 2, true),
-    (13, 3, '2024-03-17 12:00:00', 1, true),
-    (14, 4, '2024-03-18 13:00:00', 3, true),
-    (15, 5, '2024-03-19 14:00:00', 1, false),
-    (16, 1, '2024-03-20 15:00:00', 1, false),
-    (17, 2, '2024-03-21 16:00:00', 2, true),
-    (18, 3, '2024-03-22 17:00:00', 1, false),
-    (19, 4, '2024-03-23 18:00:00', 3, true),
-    (20, 5, '2024-03-24 19:00:00', 1, false);
+    (1, 1, '2024-03-15 10:00:00', 1, true),
+    (2, 2, '2024-03-16 11:00:00', 2, true),
+    (3, 3, '2024-03-17 12:00:00', 1, true),
+    (4, 4, '2024-03-18 13:00:00', 3, true),
+    (5, 5, '2024-03-19 14:00:00', 1, false),
+    (6, 1, '2024-03-20 15:00:00', 1, false),
+    (7, 2, '2024-03-21 16:00:00', 2, true),
+    (8, 3, '2024-03-22 17:00:00', 1, false),
+    (9, 4, '2024-03-23 18:00:00', 3, true),
+    (10, 5, '2024-03-24 19:00:00', 1, false);
 
 -- Insert data into the tickets table
 
@@ -64,13 +64,13 @@ INSERT INTO tickets (passenger_id, flight_id, seat_number, class, ticket_price, 
 -- Insert data into the Payments table
 
 INSERT INTO payment (reservation_id, amount_paid, payment_date, payment_method, transaction_status) VALUES
-(41, 200.00, '2024-03-15 10:20:00', 'Credit Card', true),
-(42, 500.00, '2024-03-16 11:20:00', 'PayPal', true),
-(43, 150.00, '2024-03-17 12:20:00', 'Cash', true),
-(44, 800.00, '2024-03-18 13:20:00', 'Debit Card', true),
-(45, 180.00, '2024-03-19 14:20:00', 'Credit Card', false),
-(46, 550.00, '2024-03-20 15:20:00', 'PayPal', false),
-(47, 190.00, '2024-03-21 16:20:00', 'Cash', true),
-(48, 850.00, '2024-03-22 17:20:00', 'Credit Card', false),
-(49, 160.00, '2024-03-23 18:20:00', 'Debit Card', true),
-(50, 600.00, '2024-03-24 19:20:00', 'PayPal', false);
+(1, 200.00, '2024-03-15 10:20:00', 'Credit Card', true),
+(2, 500.00, '2024-03-16 11:20:00', 'PayPal', true),
+(3, 150.00, '2024-03-17 12:20:00', 'Cash', true),
+(4, 800.00, '2024-03-18 13:20:00', 'Debit Card', true),
+(5, 180.00, '2024-03-19 14:20:00', 'Credit Card', false),
+(6, 550.00, '2024-03-20 15:20:00', 'PayPal', false),
+(7, 190.00, '2024-03-21 16:20:00', 'Cash', true),
+(8, 850.00, '2024-03-22 17:20:00', 'Credit Card', false),
+(9, 160.00, '2024-03-23 18:20:00', 'Debit Card', true),
+(10, 600.00, '2024-03-24 19:20:00', 'PayPal', false);
